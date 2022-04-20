@@ -1,0 +1,338 @@
+/******* comun use ********/
+
+body {
+  font-family: "Trip Sans Med";
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+h3 {
+  line-height: 33px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+h4 {
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h5 {
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+a {
+  color: black;
+}
+
+/************** header ***************/
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-top: 20px;
+}
+header .container div {
+  position: relative;
+  display: flex;
+}
+.search {
+  position: absolute;
+  left: 245px;
+  top: 15px;
+  font-size: 20px;
+}
+
+header .logo {
+  width: 200px;
+  margin-right: 30px;
+}
+
+header input {
+  height: 38px;
+  width: 320px;
+  border-radius: 30px;
+  border: solid #e0e0e0 2px;
+}
+
+nav {
+  background-color: #fff;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #bababa;
+  border-radius: 20px;
+}
+nav i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+nav button {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*************** main *****************/
+
+main section {
+  padding-top: 12px;
+}
+h1 span {
+  color: #e36868;
+}
+.main-nav {
+  padding-top: 22px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.main-nav div {
+  width: 180px;
+  height: 65px;
+  border: black solid 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.main-nav p {
+  font-size: 16px;
+}
+
+.main-nav div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ************ album photos ********** */
+
+.album-photos {
+  /* margin-top: 14px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-photos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.album-photos .main-img {
+  width: 657px;
+  height: 430px;
+  object-fit: cover;
+}
+.album-photos img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.album-photos div img {
+  width: 480px;
+  height: 214px;
+  object-fit: cover;
+}
+
+/* ************* fin album photos ************ */
+
+/* ********** litle nav ************ */
+.litle-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  font-size: 12px;
+}
+
+.litle-nav a,
+.litle-nav p {
+}
+.litle-nav a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.litle-nav a:hover {
+  text-decoration: underline;
+}
+
+.city-presentation p {
+  width: 650px;
+  font-size: 20px;
+  font-family: "Trip Sans Reg";
+}
+
+/* cards and carousel */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.cards > div {
+  margin-right: 45px;
+}
+.cards .carousel {
+  display: flex;
+  flex: 3;
+  align-items: flex-start;
+  padding-top: 0;
+  padding-bottom: 20px;
+  overflow-x: scroll;
+  /* hide scroll bar IE and Edge */
+  -ms-overflow-style: none;
+  /* hide scroll bar firfox */
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cards .carousel::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  width: 285px;
+  position: relative;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card img {
+  width: 270px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card .like-logo {
+  text-align: center;
+  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card .award-logo {
+  background-color: #34e0a1;
+  width: 40px;
+  height: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: 140px;
+  left: 10px;
+}
+
+.card .award-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .like-logo i {
+  font-size: 22px;
+}
+.card .ranking {
+  display: flex;
+  margin: 10px 0;
+}
+.card .ranking > div {
+  width: 11px;
+  height: 11px;
+  margin-right: 1px;
+  background-color: #00aa6c;
+  border-radius: 50%;
+}
+.carousel .card a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.carousel .card a:hover {
+  text-decoration: underline;
+}
+
+/* ******** footer ************* */
+
+footer {
+  background-color: #faf1ed;
+  padding: 30px 0;
+}
+footer section {
+  display: flex;
+}
+
+.currancy {
+  flex: 1;
+}
+footer img {
+  width: 40px;
+  margin-right: 30px;
+}
+
+.currancy {
+  display: flex;
+}
+.currancy > div {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  border: solid gray 1px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.link-footer {
+  flex: 4;
+}
+
+footer p {
+  font-size: 11px;
+  margin-top: 5px;
+  width: 70%;
+}
