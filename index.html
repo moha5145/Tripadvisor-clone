@@ -13,6 +13,9 @@
   <body>
     <header>
       <div class="container">
+        <div class="hide-humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <div>
           <img src="./assets/img/Tripadvisor_logo.svg" alt="" class="logo" />
           <div class="search-container">
@@ -21,11 +24,15 @@
           </div>
         </div>
         <nav>
-          <a href="#"><i class="fa-solid fa-pen"></i> Avis</a>
-          <a href="#"><i class="fa-regular fa-heart"></i> Voyages</a>
-          <a href="#"><i class="fa-regular fa-bell"></i> Alertes</a>
+          <i class="fa-solid fa-pen"></i>   <a href="#" class="link-to-hide"> Avis</a>
+          <i class="fa-regular fa-heart"></i>   <a href="#" class="link-to-hide"> Voyages</a>
+          <i class="fa-regular fa-bell"></i>  <a href="#" class="link-to-hide"> Alertes</a>
           <button>Connectez-vous</button>
         </nav>
+
+        <div class="hide-loop">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
     </header>
 
@@ -67,6 +74,16 @@
           <p>Plus</p>
           <i class="fa-solid fa-ellipsis"></i>
         </div>
+
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
       </nav>
       <!-------------- End main nav -------------->
 
@@ -77,8 +94,19 @@
 
           <!------------------ Album photos -------------------------->
           <div class="album-photos">
-            <img class="main-img" src="./assets/img/caption1.jpg" alt="" />
-            <div><img src="./assets/img/caption2.jpg" alt="" /><img src="./assets/img/caption3.jpg" alt="" /></div>
+            <div class="col-1">
+              <img class="main-img" src="./assets/img/caption1.jpg" alt="" />
+            </div>
+            
+            <div class="col-2">
+              <div>
+                <img src="./assets/img/caption2.jpg" alt="" />
+              </div>
+
+              <div>
+                <img src="./assets/img/caption3.jpg" alt="" />
+              </div>
+            </div>
           </div>
 
           
