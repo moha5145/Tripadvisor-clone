@@ -64,9 +64,10 @@ header .logo {
   border: solid #e0e0e0 2px;
 }
 .search-loop {
-  line-height: 38px;
-  margin: 0px 8px;
+  /* line-height: 38px; */
+  padding: 10px 8px;
   font-size: 20px;
+  box-sizing: border-box;
 }
 .search-container input {
   width: 82%;
@@ -238,6 +239,10 @@ h1 span {
   position: relative;
 }
 
+.card:not(:last-child) {
+  margin-right: 16px;
+}
+
 .card:hover {
   opacity: 0.8;
 }
@@ -245,7 +250,7 @@ h1 span {
 .card img {
   width: 270px;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
