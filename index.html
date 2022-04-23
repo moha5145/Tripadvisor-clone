@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/fa6ec3df67.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -26,7 +27,7 @@
         <nav>
           <i class="fa-solid fa-pen"></i> <a href="#" class="link-to-hide"> Avis</a> <i class="fa-regular fa-heart"></i>
           <a href="#" class="link-to-hide"> Voyages</a> <i class="fa-regular fa-bell"></i> <a href="#" class="link-to-hide"> Alertes</a>
-          <button>Connectez-vous</button>
+          <button id="login">Connectez-vous</button>
         </nav>
 
         <div class="hide-loop">
@@ -35,61 +36,59 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
+    <main class="container">
+      <div>
         <h1><span>Explorez</span> Paris</h1>
       </div>
 
       <!------------- main nav ------------>
 
-      <section class="container">
-        <nav class="main-nav">
-          <div>
-            <p>Hôtels</p>
-            <i class="fa-solid fa-bed"></i>
-          </div>
+      <nav class="main-nav">
+        <div>
+          <p>Hôtels</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
 
-          <div>
-            <p>Locations de vacances</p>
-            <i class="fa-solid fa-house-lock"></i>
-          </div>
+        <div>
+          <p>Locations de vacances</p>
+          <i class="fa-solid fa-house-lock"></i>
+        </div>
 
-          <div>
-            <p>Activités</p>
-            <i class="fa-solid fa-bed"></i>
-          </div>
+        <div>
+          <p>Activités</p>
+          <i class="fa-solid fa-bed"></i>
+        </div>
 
-          <div>
-            <p>Restaurants</p>
-            <i class="fa-solid fa-utensils"></i>
-          </div>
+        <div>
+          <p>Restaurants</p>
+          <i class="fa-solid fa-utensils"></i>
+        </div>
 
-          <div>
-            <p>Forums de voyage</p>
-            <i class="fa-regular fa-message"></i>
-          </div>
+        <div>
+          <p>Forums de voyage</p>
+          <i class="fa-regular fa-message"></i>
+        </div>
 
-          <div>
-            <p>Plus</p>
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
+        <div>
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
 
-          <div class="div-to-hide">
-            <p>Plus</p>
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
 
-          <div class="div-to-hide">
-            <p>Plus</p>
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
-        </nav>
-      </section>
+        <div class="div-to-hide">
+          <p>Plus</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </nav>
 
       <!-------------- End main nav -------------->
 
       <!-- --------------------------- section home -------------------------->
-      <section class="container-2">
+      <section>
         <!------------------ Album photos -------------------------->
         <div class="album-photos">
           <div class="col-1">
@@ -109,7 +108,7 @@
       </section>
 
       <!----------------- litle nav after photos -------------------------------->
-      <section class="container">
+      <section>
         <div class="litle-nav">
           <div><a href="#">Europe </a> > <a href="#"> France </a> > <a href="#"> Île-de-france </a> > <a href="#"> Paris </a></div>
           <p>Visiter : paris</p>
@@ -129,7 +128,7 @@
 
       <!-- --------------------------- section cards ------------------------------ -->
 
-      <section class="container-3">
+      <section>
         <h3>Paris : les immanquables</h3>
 
         <div class="cards">
@@ -775,5 +774,24 @@
         </p>
       </section>
     </footer>
+
+    <div class="modal hidden">
+      <div class="form-container">
+        <i class="fa-solid fa-xmark" id="icon-times"></i>
+        <div>
+          <p>Formulaire de contact</p>
+
+          <form id="contactForm">
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom" autocomplete="off" />
+            <input type="text" name="lastname" id="lastname" placeholder="Nom" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea name="description" id="description" rows="5" cols="50" placeholder="Écrivez ici votre message..."></textarea>
+            <input type="submit" value="Envoyer le formulaire" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
