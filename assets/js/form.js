@@ -27,7 +27,7 @@ $.addEventListener("DOMContentLoaded", () => {
       message: $.querySelector("#description").value,
     };
 
-    const response = await axios.post("http://localhost:3000/form", data);
+    const response = await axios.post("https://email-form-tripadvisor.herokuapp.com/form", data);
     alert(response.data.message);
     console.log(response.data, data);
   });
